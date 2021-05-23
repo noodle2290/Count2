@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             count.text = number.toString()
 
             if (number % 3 == 0){
-                count.setTextColor(Color.RED)
+                count.setTextColor(Color.GREEN)
             }else{
                 count.setTextColor(Color.BLACK)
             }
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             number--
             count.text = number.toString()
             if (number % 3 == 0){
-                count.setTextColor(Color.RED)
+                count.setTextColor(Color.GREEN)
             }else{
                 count.setTextColor(Color.BLACK)
             }
