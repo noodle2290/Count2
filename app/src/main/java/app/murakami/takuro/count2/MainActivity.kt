@@ -1,5 +1,6 @@
 package app.murakami.takuro.count2
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -13,11 +14,22 @@ class MainActivity : AppCompatActivity() {
         plusButton.setOnClickListener {
             number++
             count.text = number.toString()
+
+            if (number % 3 == 0){
+                count.setTextColor(Color.RED)
+            }else{
+                count.setTextColor(Color.BLACK)
+            }
         }
 
         minusButton.setOnClickListener {
             number--
             count.text = number.toString()
+            if (number % 3 == 0){
+                count.setTextColor(Color.RED)
+            }else{
+                count.setTextColor(Color.BLACK)
+            }
         }
 
 
