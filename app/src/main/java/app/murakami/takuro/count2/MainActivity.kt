@@ -15,6 +15,13 @@ class MainActivity : AppCompatActivity() {
             count.text = number.toString()
         }
 
+        minusButton.setOnClickListener {
+            number--
+            count.text = number.toString()
+        }
+
+
+
 
 
     }
